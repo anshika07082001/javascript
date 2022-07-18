@@ -1,0 +1,42 @@
+body{
+    background-color: grey;
+}
+#container{
+    height: 100px;
+    width: 25%;
+    background-color: white;
+    margin: 10%;
+    align-items: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+#increment{
+    height: 50%;
+    width: 25%;
+    background-color: rgb(243, 239, 239);
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-right: 2px solid grey;
+}
+#counter{
+    height: 46%;
+    width: 25%;
+    background-color: white;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-radius: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#decrement{
+    height: 50%;
+    width: 25%;
+    background-color: rgb(243, 239, 239);
+    border-bottom-left-radius : 6px;
+    border-top-left-radius: 6px;
+    border-left: 2px solid grey;
+}
