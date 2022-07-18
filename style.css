@@ -1,0 +1,107 @@
+#douter{
+    height: 600px;
+    width: 100%;
+    border: 1px solid rgb(23, 175, 221);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#img{
+    height: 100%;
+    width: 50%;
+}
+#img img{
+    height: 100%;
+    width:100%;
+}
+#form{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#f1{
+    height: 30%;
+    width: 100%;
+    /* background-color: pink; */
+    margin-top: 3%;
+}
+#p1{
+    font-size: 2rem;
+    margin:0%;
+    font-family:sans-serif; 
+    text-align: center;
+}
+#p2{
+    margin: 0%;
+    font-family:sans-serif;
+    text-align: center;
+}
+#a1{
+    text-decoration: none;
+    color: black;
+}
+#p3{
+    color: rgb(21, 185, 226);
+    text-align: center;
+    font-family: sans-serif;
+}
+#a2{
+    text-decoration: none;
+    color: orangered;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+.google{
+    height: 10%;
+    width: 20%;
+}
+.facebook{
+    height: 10%;
+    width: 20%;
+}
+#f2{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    /* background-color: yellow; */
+}
+#f3{
+    height: 57%;
+    width: 100%;
+    background-color: pink;
+}
+#f31{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: violet;
+    width: 100%;
+}
+#f311{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: whitesmoke;
+    width: 100%;
+}
+#f312{
+    background-color: yellow;
+}
+#input1{
+    width: 30%;
+}
+#i1{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.i2{
+    height: 100%;
+    width: 10%;
+        
+}
