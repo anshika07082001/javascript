@@ -1,0 +1,21 @@
+#outer{
+    height: 100px;
+    width: 30%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+#Age{
+    margin-left: 19px;
+}
+#Weight{
+    margin-top: 1%;
+}
+button{
+    margin-left: 49px;
+    margin-top:1%;
+}
+#p1{
+    margin: 0%;
+    color: red;
+}
