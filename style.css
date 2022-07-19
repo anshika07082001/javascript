@@ -1,0 +1,33 @@
+#pid{
+    margin: 1%;
+
+}
+#pname{
+    margin: 1%;
+
+}
+#pprice{
+    margin: 1%;
+
+}
+#input1{
+    margin-left:4%;
+}
+#input2{
+    margin-left:1.5%;
+}
+#input3{
+    margin-left:2%;
+}
+#btn{
+    height: 40%;
+    width: 20%;
+    background-color: white;
+    margin: 1%;
+}
+#table{
+    margin: 2%;
+}
+#t{
+    width: 100%;
+}
