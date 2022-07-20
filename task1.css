@@ -1,0 +1,25 @@
+table{
+    width: 80%;
+    /* text-align: center; */
+}
+#product {
+    width: 80%;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    body{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width:450px){
+    th{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:380px){
+    th{
+        font-size: 0.6rem;
+    }
+}
