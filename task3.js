@@ -1,14 +1,7 @@
-var flag=0;
-function titleCase(string) {
-    var sentence = string.toLowerCase().split(" ");
-    for(var i = 0; i< sentence.length; i++){
-       sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
-    }
-    sentence.join(" ");
-    return sentence;
-}
-function validateform(){
 
+
+function validateform(){
+    var valid = true;
     var namev = document.getElementById('i1').value;
     var emailv = document.getElementById('i2').value;
     var phonev = document.getElementById('i3').value;
@@ -19,39 +12,37 @@ function validateform(){
     var product3 = document.getElementById('i9').value;
 
 
-   
+
+    var letters = /^([A-Z][^\s]*)/;
     var namev = document.getElementById('i1').value;
-    var arr=[];
-  
-    if(titleCase(namev)==namev){
+    if(namev.match(letters)){
         document.getElementById('error').innerHTML="";
     }
     else{
-        document.getElementById('error').innerHTML="Define valid username";
-        return false;
+        document.getElementById('error').innerHTML="Define valid name";
+        valid = false;
     }
-    
 
     var sletters =/^\w+([ \.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var emailv = document.getElementById('i2').value;
-    console.log(arr);
     if(emailv.match(sletters)){
         document.getElementById('error2').innerHTML="";
         
     }
     else{
         document.getElementById('error2').innerHTML ="Define valid email";
-        return false;
+        valid = false;
     }
     var phonenum =/^\d{10}$/;
     var phonev = document.getElementById('i3').value;
     if(phonev.match(phonenum)){
         document.getElementById('error3').innerHTML="";
-    
+        
     }
     else{
         document.getElementById('error3').innerHTML="Number should be of 10 digit";
-        return false;
+        valid = false;
+    
     }
     var postcode =/^\d{6}$/;
     var postv = document.getElementById('i4').value;
@@ -61,9 +52,11 @@ function validateform(){
     }
     else{
         document.getElementById('error4').innerHTML="code should be of 6 digit";
-        return false;
+        valid = false;
     }
-   
+    
+    if(valid==true){
+           
     const orders= [{name:namev,email:emailv,phone:phonev,address:addressv,produc1:product1,produc2:product2,produc3:product3}];
 
     document.getElementById('namea').innerHTML=orders[0].name;
@@ -96,23 +89,7 @@ function validateform(){
 
     overallTotal = anstotal+taxtotal;
     document.getElementById('totalla').innerHTML=overallTotal;
-// console.log(document.getElementById('invoice').style.display);
- 
 
-
-
-
-    // if(document.getElementById('invoice').style.display=="none")
-    
-        document.getElementById('invoice').style.display="block";
-    
-
-        // document.getElementById('invoice').style.display="block";
-        return true;
-
-
-
+    document.getElementById('invoice').style.display="block";
+        }
 }
-
-
-
