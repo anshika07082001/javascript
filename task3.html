@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <form action="#">
+    <div id="formdiv">
+            <div class="div1" id="name"><label>NAME*:</label><input type="text" id="i1" required></div>
+            <p id="error"></p>  
+            <div class="div1" id="email"><label>EMAIL*:</label><input type="text" id="i2" required></div>
+            <p id="error2"></p>
+            <div class="div1" id="phone"><label>PHONE*:</label><input type="number" placeholder="XXX-XXX-XXX" id="i3" required></div>
+            <p id="error3"></p>
+            <div class="div1" id="address"><label>ADDRESS*:</label><input type="text" required id="i5"></div>
+            <div class="div1" id="city"><label>CITY*:</label><input type="text" required id="i6"></div>
+            <div class="div1" id="code"><label>POST CODE*:</label><input type="number" placeholder="X9X X9X" id="i4" required></div>
+            <p id="error4"></p>
+            <div class="div1" id="province"><label>PROVINCE*:</label><select><option id="i10">ONTARIO</option></select></div>
+            <div class="div1" id="prod1"><label>PRODUCT 1:</label><input type="number" placeholder="Enter a number" required id="i7"></div>
+            <div class="div1" id="prod2"><label>PRODUCT 2:</label><input type="number" placeholder="Enter a number" required id="i8"></div>
+            <div class="div1" id="prod3"><label>PRODUCT 3:</label><input type="number" placeholder="Enter a number" required id="i9"></div>
+            <div class="div1" id="dtime"><label>DELIVERY TIME:</label><select id="i11">
+                <option>DAYS</option>
+                <option value="1">1 DAYS</option>
+                <option value="2">2 DAYS</option>
+                <option value="3">3 DAYS</option>
+            </select></div>          
+            <button type="submit" onclick="validateform()">PLACE ORDER</button>      
+        </div>
+    </form>
+        
+        <div id="invoice">
+            <h1>MY SHOP'S INVOICE</h1>
+            <div class="div2"><label>NAME</label><p id="namea"></p></div>
+            <div class="div2"><label>EMAIL</label><p id="emaila"></p></div>
+            <div class="div2"><label>PHONE</label><p id="phonea"></p></div>
+            <div class="div2"><label>DELIVERY ADDRESS</label><p id="deliverya"></p></div>
+            <div class="div2"><p id="p1a"></p><label class="a1">PRODUCT 1 @ $10.0</label><p id="ap1a">$</p></div>
+            <div class="div2"><p id="p2a"></p><label class="a1">PRODUCT 2 @ $20.0</label><p id="ap2a">$</p></div>
+            <div class="div2"><p id="p3a"></p><label class="a1">PRODUCT 3 @ $30.0</label><p id="ap3a">$</p></div>
+            <div class="div2"><label>SHIPPING CHARGES</label><p id="shippinga"> $20</p></div>
+            <div class="div2"><label>SUB TOTAL</label><p id="totala">$</p></div>
+            <div class="div2"><label>TAXES @ 13%</label><p id="taxesa">$</p></div>
+            <div class="div2"><label>TOTAL</label><p id="totalla">$</p></div>
+        </div>
+    </div>
+    <script src="task3.js"></script>
+</body>
+</html>
