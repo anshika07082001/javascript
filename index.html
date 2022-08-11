@@ -35,20 +35,21 @@
                 <p id="f2p">Or</p>
             </div>
             <div id="f3">
+                <p id="message"></p>
                 <label style="font-family:sans-serif; margin-left: 5%;" for="">Name</label>
                 <div id="f31">
-                    <img src="https://www.icmetl.org/wp-content/uploads/2020/11/user-icon-human-person-sign-vector-10206693.png" class="img">
-                    <input type="text" placeholder="Joy Saheb" id="input1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQVWSSykH3wnkS8JZyd2cUyy8e-zFLJ5dWg&usqp=CAU" class="img">
+                    <input type="text" placeholder="Joy Saheb" id="input1" required><p id="error1"></p>
                 </div>
                 <label style="font-family:sans-serif; margin-left: 5%;">Email</label>
                 <div id="f32">
                     <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" class="img">
-                    <input type="text" placeholder="abc@gmail.com" id="input2">
+                    <input type="text" placeholder="abc@gmail.com" id="input2" required><p id="error2"></p>
                 </div>
                 <label style="font-family:sans-serif; margin-left: 5%;">Password</label>
                 <div id="f33">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADw8PBra2thYWGGhoa1tbXr6+vz8/Pe3t719fXDw8PJycn7+/vm5ua7u7vW1taurq5ycnJHR0eRkZGlpaUpKSlWVlZ8fHzg4OCgoKCWlpYPDw/Q0NBpaWkkJCQbGxtAQEA3NzdRUVEwMDBbW1sfHx+CgoI1NTV3jT8JAAAGzElEQVR4nO2daVsqOwyAlX0bdlFEERT0/P9feOG6kbRTpk1Kgk/ez2d68kqn27TpzY1hVKM9bj02p+vGgfr0YTUZDHvSIfHR7s/fnm5dNvvVoJAOjkzRf/DJ/TJbdaVjpDCoB+2+eJ9fqWR7Hv71TnmdSEcbT7dRWe+T+XW1PMt9pN//jtJRV6czTfA7cicdeUUmiX4HFmPp4CtQm6ULHviQjv8sfZLf8WdcSiuEaVIFD7SkJQIUtBr6zYO0RynDdxbBw1BO2qSEbijoRWPVeu4eJxRFZ9gdPH7MNqF/3ZGW8TEuj3f17BuwDCfl44InhYplv+DLahh4qr++GsWaP9C3wbkHO4/+J9+VTR2LF1+UjWrToon3ldxmDjkSXzfx+lz58TufYj1jvNH4OvqoYXTP9z4+5go3npEb3a5NL+O2eiXIjKeVmcaX0l64xWiZFbsvYdpEz+0e98yRJuLOB0eJJT2wlcSKW0fP9oGluC2WhnrqrBj2CYU5igrmGc5wlDa9c5Z4QmO+y4CbmSaxvC0qT7yxGaCAyFO7Hl5Hll6c2rG3DLjavzFESeCZ9SX8BLc2sl817mEw9yyFosGN6Ah8iP7csYNRP7hiSE6G5zAUajv6DRq+Sc4x0B+ba1qOVkQ2TMUmgLqKFVvBaLYo12GgkTLfGBL9iFy1Px4YB+cQErbRG8aSo0B9M2ddQh94pL7WwJb0hbVsaCj16XQLouBt0+ErzjOSiKbIWZNQM81admXga7hgLl3DiwiXcbkn43C3isxXU7h8wb1mlPfvVw3Y0HCvNsB3QKapydwWgNI37MVXoA1C4J+Jw0/m7MVXAFajhGX8M8DXXKIxhQMr/k1pcDFD4iMNbOz4t0/CjwWUZeZUVpkjgJ/bJEamuWsRHLfxza6rAw35l/zgLFhi8yk05P+8ANfxJKb50JBnHfGUmhlmxwypmGF+zJCKGebHDKmYYX7MkIoZ5scMqZhhfsyQihnmxwypmGF+zJCKGebnLxouW80913HtdF72zVaWQxjDufeYqBCL4OniFAZv0k4O95yfLMf/pHW8bNk+WrqH5rTA0/4EUyVIs2F4HX3nczWRftjxi5J8AIog7nNZnf8fxCEptqSjrwRhL4/qRuaE5CFjEUoho4l/qYapadcuT2K/6E+p8/S2rsux9uYJTd2whA/AHnhQkHC06HvqVtIGXrern9a4o02k5mYNTTmS5PyE5NEDI07iu4St7vgtfOKfxVPA53MTegw8odBSQ79po/jij12hNktNMpwf0Mmo6LRSaDijIAGHA2puYk98o9xUGpKoYFDamNjRKexzNP6E+Dx07D5pmNdA31t4BHYZ68inYQ2QH8n46IEYd3EPd2jt1IWAFS3uWdjbiGfBKWFGMITtVCNPgGTgOdO47uIaDeNGXWaoAzMMYYY6MMMQZqgDMwxhhjowwxB5DGuj5rQ+bY64Via1GfZ/p3MznvVzXYbLLShyxrGnSZWh+52HIc+EJkPfHVD03E+KDHG24U/Ia5R6DFFmtx+IxSoyLNsQQL2gS41hyQ0tt+T8uWoMy3eOEXMtqjF8LTUkZgjTYljWzhwhFazGMLR3jDay0WJYfpkXNW+tGYa4VC2lpdLTYojzmp9CK1iNYXlv8UorWI1h+VZqYp45NYbODq0fiDvJ1BiWjrypKUH1GMJ9D79Q9yHpMSy5JZi8jqHI0NvY0JO4azL0zKAYMpKqMrwZw+09C46TdboM0XoiS4JzZYbwhBFLGnkzDGGGCZhhAmYYwgwTMMMEzDCEGSZghgmYYQgzTMAMEzDDEGaYgBkmYIYhMhjCvW0sG0yVGcLPMyyHw5UZgvvEeUrUZnh68pYnyYY2w5N775muf1ZneNP+DKn+V/fqH2n3RwO+LCkaDXkxwxBmqAMzDGGGOjDDEGaoAzMMYYY6+PuGexBl3DExmCiMeDwpG/A6g8ilH/DsIk+AZOB9FJEPwzTQ2lJ7fgJTrr1HPg2rOMv6LTtwjTm2sZiDp2dZIqSyBTHGZoZEe8+ZFsdYeYYhxu6LRwcINGZORIeNolfRYU7C6DqQH/geJfRoKAktz8ZsRnAaivg7IHqoBGXtqZOGIiHFqnNYSVOqXZbglrgQ8oUnXBT4DbpNPDLtJq8//KlGS9mMu0V35DsJl1a/yk6caSTxz+6pDEpJfn3upSOvSGyi618K/4Ug2nhJFgyd4NUEaW53DfchEbOG6VckH2TseC7UUcSOY2OO5mufqOfdvxhobVI3fJf76LwjkOGs9C/Fo6abZI8s7tgHyOPm4vz/eyF2zUwLR7XB5GO6bkiynjYnjHuOjKvgP27RW+TeLk6KAAAAAElFTkSuQmCC" class="img">
-                    <input type="password" placeholder="**********" id="input3">
+                    <input type="password" placeholder="**********" id="input3" required><p id="error3"></p>
                 </div>
                 <button type="button" onclick="form1();">Submit</button>
             </div>                
