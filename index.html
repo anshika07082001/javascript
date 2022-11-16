@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task1</h1>
+    <h3>Create an object</h3>
+    <div>
+        <select onchange=select1(this) id="sel1">
+            <option>select</option>
+            <option>Cashier</option>
+            <option>Manager</option>
+        </select>
+        <select onchange=select2(this) id="sel2">
+            <option>Type</option>
+            <option>hourly</option>
+            <option>Monthly</option>
+            <option>Daily</option>
+        </select>
+        <label>Availability</label>
+        <input type="checkbox" onclick='check(this)'/>
+        <button onclick=showDetails()>Add</button>
+    </div>
+    <div id="tableShow">
+    </div>
+    <hr/>
+    <h1>Task2</h1>
+    <h3>Create one more object for food items and merge with above created object to get a new object and print it.</h3>
+    <input type='text' id="foodInp"/><button onclick=add()>Add</button>
+    <div id="foodItems">
+    </div>
+    <hr/>
+    <h1>Task3</h1>
+    <h3>Print value of all the keys of object</h3>
+    <button onclick='getValues()'>Print value of all the keys of object</button>
+    <p id="values"></p>
+    <hr/>
+    <h1>task4</h1>
+    <h3>Print all the keys of object</h3>
+    <button onclick=getKeys()>Print all the keys of object</button>
+    <p id="keys"></p>
+    <hr/>
+    <h1>Task5</h1>
+    <h3>Prevent the Employee object from updation</h3>
+    <button onclick="prevent()">Prevent the Employee object from updation</button>
+    <hr/>
+    <h1>task6</h1>
+    <h3>Print all the key values as an individual array, nested in an array</h3>
+    <button onclick=nested()>Print nested Array</button>
+    <script src="script.js"></script>
+</body>
+</html>
